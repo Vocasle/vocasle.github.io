@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+  <!-- <link rel="icon" href="./assets/images/1311.png" /> -->
+  <title>Nikita Elsakov Portfolio</title>
+  <meta name="description" content="A portfolio of Nikita Elsakov.">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="stylesheet" href="./css/layout.css">
+  <link rel="stylesheet" href="./css/typography.css">
+  <link rel="stylesheet" href="./css/utilities.css">
+
+  <script defer src="./js/script.js"></script>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <a class="nav-title-link" href="./index.html">
+      <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+      <span class="nav-title">@vocasle</span>
+      <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+      <a class="button" href="mailto:vocasle@gmail.com">
+        <span class="button-text">Contact Me</span>
+      </a>
+    </a>
+  </div>
+
+  <!-- MAIN PAGE CONTENT -->
+  <div id="main-content">
+
+    <!-- PORTFOLIO HEADER -->
+    <div id="portfolio-header">
+      <div id="portfolio-header-image-container">
+        <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+        <img style="border-radius: 50%;" src="./assets/images/resume_photo.jpg" class="portfolio-header-image">
+        <!-- <a class="no-underline" target="_blank" href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311"> -->
+        <!-- <span class="image-caption">Unemployables #1311</span> -->
+        <!-- </a> -->
+      </div>
+
+      <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+      <div id="portfolio-header-text-container">
+        <div class="header-text">
+          <span class="main-title">Hey, I'm Nikita Elsakov.</span>
+          <div class="body-text">I’m a self taught developer. Keen in computer graphics and game engines.</div>
+        </div>
+        <a class="button" id="my-work-link">
+          <span class="button-text">Check out my projects</span>
+          <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+        </a>
+      </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+    <div id="about-section">
+      <span class="subheader-text">My Background / About Me</span>
+      <div class="about-section-content">
+        <div class="body-text">My journey begun from web development. I have started to learn how to code with <a
+            href="https://www.udemy.com/course/the-complete-web-developer-course-2" target="_blank">"The Complete Web
+            Developer Course 2.0"</a> online course on Udemy. After that I have learned that JavaScript is a compiled
+          language by reading @getify's <a target="_blank" href="https://github.com/getify/You-Dont-Know-JS">"You Dont'
+            Know JS"</a>. During that time I have landed my first job as web developer. After some time I was assigned
+          to work on hybrid mobile apps. I have discovered Apache Cordova, than I have touched NativeScript and finally
+          I have started to develop native mobile applications for both Android and iOS platforms. Here I yet again
+          hardened my knowledge of Model View Controller design pattern. I have enjoyed working with statically typed
+          languages and I have started to study C++. I have read 2/3 of "Programming: Principles and Practice using C++
+          (2nd edition)" by Bjarne Stroustrup. I think that this is a good book to begin your journey as a self taught
+          developer. I have worked through <a target="_blank"
+            href="https://github.com/vocasle/principles_and_practice_using_cpp">some exercises</a> as well. At that time
+          I was trying to use CMake as a build system. I have spent dozen of time trying to link dependencies with
+          CMake. And I am happy that I did not drop trying to do so. Right now I use CMake mostly all the time except
+          when I work on Windows. After I have spent about a year of learning C++ after my day job I have landed a job
+          in gamedev. I was very happy because I was tired of web development and I wanted to work on something serious.
+        </div>
+        <div class="body-text">During my work as gamedeveloper I was mostly working with Unreal Engine 4 and I have had
+          a chance to work with Unreal Engine 3.5 codebase. Aside from my work I have started to learn OpenGL by
+          following <a href="https://learnopengl.com" target="_blank">learnopengl.com</a>. I have completed <a
+            href="https://github.com/vocasle/learn_open_gl" target="_blank">excercises up to model loading</a> and I was
+          kind of happy when I have loaded Sponza model. I have also maid a <a
+            href="https://github.com/vocasle/gl_snake" target="_blank">silly snake game</a>. It is silly yeas, but I
+          have enjoyed the process of making a game without a game engine. After that I have started to explore <a
+            href="https://github.com/vocasle/dx11/tree/sponza-nofog-nobloom" target="_blank">DirectX 11</a>. I have
+          covered a bunch of rendering techniques such as Phong shading, PCF shadows, dynamic environment reflections
+          via cubemap, fog post process effect, bloom post process effect, particle systems. At that time I have
+          switched my position to rendering software engineer. I have had a chance to fix some rendering issues in
+          Unreal 4 based project after we have upgraded engine from 4.19 to 4.27. Also I was working on porting DirectX
+          9 renderer to DirectX 11. It was a lot of fun.</div>
+        <div class="body-text">Aside from my work I was working on my own game engine - <a
+            href="https://github.com/vocasle/NEngine/tree/dx11" target="_blank">NEngine</a>. I have started with
+          facilities that I have invented during the time I was learning DirectX 11. Some of those facilities were
+          rewritten from scratch. I have rewrote my math library for few times for sure. I did not use any third party
+          libraries for window management and user input and because of that I know a little bit of WIN32 API. The
+          render was pretty basic. All I had is phong shading and non-working PBR. But I was mostly focused on other
+          engine components such as: sound, entity management system, user input, Wavefront *.obj model parser.
+          Currently I have switched my priorities but I will definitely switch back to NEngine in the near future. Right
+          now I work on DirectX 12 renderer. I would like to implement PBR with IBL, skinning, SSAO, SSLR, MSAA. Try
+          deffered lighting approach and see what are the cons and pros of this approach.</div>
+      </div>
+    </div>
+
+    <!-- PROJECTS / MY WORK SECTION -->
+    <div id="my-work-section">
+      <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+      <span class="subheader-text">My Work / My Projects</span>
+
+      <div class="projects-container">
+        <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
+            </div>
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+        <div class="project-card">
+          <img src="./assets/images/sponza.jpg" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Learning DirectX 11</div>
+            <div class="body-text project-card-text">During this project I have learned how to initialize DirectX 11
+              context and covered basic rendering techniques such as processing input and camera control, model loading
+              from *.obj files, generate mip-maps for textures, calculate phong lighting for directional, point and spot
+              light sources, particle system, soft shadows via PCF, dynamic environment reflections via render to cube
+              map, fog and bloom post process effects.</div>
+          </div>
+          <a class="button" href="./project-pages/dx11.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+        <div class="project-card">
+          <img src="./assets/images/code.jpeg" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Project Name</div>
+            <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et.
+              Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+          </div>
+          <a class="button" href="./project-pages/project-template.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+        <div class="project-card">
+          <img src="./assets/images/sketchbook.jpeg" class="project-image">
+          <div class="project-card-text-container">
+            <div class="subheader-text project-title">Super Long Project Name That Should be Hidden</div>
+            <div class="body-text project-card-text">Elit pellentesque habitant morbi tristique senectus et netus et.
+              Elementum tempus egestas sed sed risus pretium quam. Nibh ipsum consequat nisl vel pretium</div>
+          </div>
+          <a class="button" href="./project-pages/project-template.html">
+            <span class="button-text">Read More</span>
+            <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div id="footer">
+    <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/nikita-elsakov-a68076252/">
+      <image src="./assets/icons/linkedin.svg" class="footer-icon" />
+    </a>
+    <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+    <a class="icon-link" href="mailto:vocasle@gmail.com">
+      <image src="./assets/icons/mail.svg" class="footer-icon" />
+    </a>
+  </div>
+
+</body>
+
+</html>
